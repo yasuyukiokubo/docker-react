@@ -6,3 +6,4 @@ COPY . .
 RUN npm run build
 
 FROM nginx
+COPY --fron=builder /app/build /usr/share/nginx/html
